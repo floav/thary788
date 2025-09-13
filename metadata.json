@@ -1,0 +1,5 @@
+{
+  "name": "Size Selection Tool",
+  "description": "A web application to select product categories, customize sizes, specify quantities, and manage a list of items. It features dynamic form inputs and a data table with sort, copy, and delete functionalities.",
+  "requestFramePermissions": []
+}
