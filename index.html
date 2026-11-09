@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>KB PRASAC Bank</title>
+  <meta name="theme-color" content="#534F43">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Root Mobile Web App Shell -->
+  <div class="app-root" id="appRoot">
+
+    <!-- ====================================================================
+         VIEW 0: HOME SCREEN (Exact 1:1 match of the main app dashboard)
+         ==================================================================== -->
+    <div class="app-screen app-screen-active" id="screenHome">
+      <!-- TOP BAR (Dark Olive #534F43, Height 130px) -->
+      <header class="app-header">
+        <!-- Hamburger Menu Button -->
+        <button class="header-icon-btn menu-btn" id="menuBtn" aria-label="Menu" title="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6.5H20" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M4 12H20" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M4 17.5H13" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <!-- KB PRASAC Bank Logo & Brand (User SVG 1-08.svg) -->
+        <div class="brand-container" id="brandLogo">
+          <img src="New folder/1-08.svg" class="kb-star-logo" alt="KB Star" width="28" height="20">
+          <span class="brand-text">KB PRASAC Bank</span>
+        </div>
+
+        <!-- Notification Bell Button (User SVG 1-10.svg) -->
+        <button class="header-icon-btn bell-btn" id="bellBtn" aria-label="Notifications" title="Notifications">
+          <img src="New folder/1-10.svg" alt="Bell" width="22" height="22">
+        </button>
+
+        <!-- Red KHQR Button (User SVG 1-09.svg) -->
+        <button class="khqr-btn" id="khqrHeaderBtn" aria-label="Bakong KHQR" title="Bakong KHQR">
+          <img src="New folder/1-09.svg" alt="KHQR" width="44" height="44">
+        </button>
+      </header>
+
+      <!-- MAIN SCROLLABLE APP BODY -->
+      <main class="app-body" id="appBody">
+
+        <!-- ACCOUNT / WALLET CARDS SWIPEABLE CAROUSEL -->
+        <section class="account-card-section">
+          <div class="account-cards-carousel" id="accountCardsCarousel">
+            <!-- Card 1: USD Account (5,000 ដុល្លារ) -->
+            <div class="account-card swipe-card-item" id="accountCardUSD" data-index="0" data-currency="ដុល្លារ" data-acc="035 525 220 002">
+              <!-- Gold Header Ribbon -->
+              <div class="card-gold-header">
+                <span class="account-holder-name">HENG LYHOUR</span>
+              </div>
+
+              <!-- White Card Body -->
+              <div class="card-white-body">
+                <div class="account-type-row">
+                  <span class="account-type-label">Digital Account 035 525 220 002</span>
+                </div>
+
+                <div class="balance-row">
+                  <span class="balance-amount">5,000</span>
+                  <span class="balance-currency">ដុល្លារ</span>
+                </div>
+
+                <!-- Action Buttons Inside Card -->
+                <div class="card-actions-row">
+                  <button class="card-action-btn transfer-action-btn">
+                    <div class="action-icon-circle">
+                      <img src="New folder/1-12.svg" alt="ផ្ទេរប្រាក់" width="22" height="18">
+                    </div>
+                    <span class="action-btn-text">ផ្ទេរប្រាក់</span>
+                  </button>
+
+                  <button class="card-action-btn payment-action-btn">
+                    <div class="action-icon-bill">
+                      <img src="New folder/1-05.svg" alt="ទូទាត់" width="28" height="28">
+                    </div>
+                    <span class="action-btn-text">ទូទាត់</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: KHR Account (10,000,000 រៀល) -->
+            <div class="account-card swipe-card-item" id="accountCardKHR" data-index="1" data-currency="រៀល" data-acc="035 639 220 003">
+              <!-- Gold Header Ribbon -->
+              <div class="card-gold-header">
+                <span class="account-holder-name">HENG LYHOUR</span>
+              </div>
+
+              <!-- White Card Body -->
+              <div class="card-white-body">
+                <div class="account-type-row">
+                  <span class="account-type-label">Digital Account 035 639 220 003</span>
+                </div>
+
+                <div class="balance-row">
+                  <span class="balance-amount">10,000,000</span>
+                  <span class="balance-currency">រៀល</span>
+                </div>
+
+                <!-- Action Buttons Inside Card -->
+                <div class="card-actions-row">
+                  <button class="card-action-btn transfer-action-btn">
+                    <div class="action-icon-circle">
+                      <img src="New folder/1-12.svg" alt="ផ្ទេរប្រាក់" width="22" height="18">
+                    </div>
+                    <span class="action-btn-text">ផ្ទេរប្រាក់</span>
+                  </button>
+
+                  <button class="card-action-btn payment-action-btn">
+                    <div class="action-icon-bill">
+                      <img src="New folder/1-05.svg" alt="ទូទាត់" width="28" height="28">
+                    </div>
+                    <span class="action-btn-text">ទូទាត់</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div class="card-pagination" id="cardPagination">
+            <span class="dot dot-active" data-index="0"></span>
+            <span class="dot dot-inactive" data-index="1"></span>
+          </div>
+        </section>
+
+        <!-- 6-GRID SERVICE ACTIONS CARD (Width 416px, Height 264px) -->
+        <section class="services-grid-card">
+          <!-- Row 1, Col 1: គណនី (Wallet - 1-14.svg) -->
+          <div class="grid-cell" id="cellAccounts" role="button" tabindex="0">
+            <div class="grid-icon-wrap">
+              <img src="New folder/1-14.svg" alt="គណនី" width="44" height="42">
+            </div>
+            <span class="grid-cell-label">គណនី</span>
+          </div>
+
+          <!-- Row 1, Col 2: ប័ណ្ណ (Cards - Credit Card) -->
+          <div class="grid-cell" id="cellCards" role="button" tabindex="0">
+            <div class="grid-icon-wrap">
+              <svg width="44" height="32" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="44" height="32" rx="4" fill="#F6B304" stroke="#DDA102" stroke-width="1.2"/>
+                <rect x="1" y="7" width="44" height="6" fill="#FFFFFF"/>
+                <rect x="26" y="20" width="12" height="7" rx="1.5" fill="#FFFFFF" fill-opacity="0.95"/>
+              </svg>
+            </div>
+            <span class="grid-cell-label">ប័ណ្ណ</span>
+          </div>
+
+          <!-- Row 1, Col 3: បញ្ញើ (Deposits / Inbox - 1-02.svg) -->
+          <div class="grid-cell" id="cellDeposits" role="button" tabindex="0">
+            <div class="grid-icon-wrap">
+              <img src="New folder/1-02.svg" alt="បញ្ញើ" width="44" height="42">
+            </div>
+            <span class="grid-cell-label">បញ្ញើ</span>
+          </div>
+
+          <!-- Row 2, Col 1: គម្ចី (Loans / Gift Box - 1-07.svg) -->
+          <div class="grid-cell" id="cellLoans" role="button" tabindex="0">
+            <div class="grid-icon-wrap">
+              <img src="New folder/1-07.svg" alt="គម្ចី" width="42" height="42">
+            </div>
+            <span class="grid-cell-label">គម្ចី</span>
+          </div>
+
+          <!-- Row 2, Col 2: ដកប្រាក់ (Withdraw Cash - 1-03.svg) -->
+          <div class="grid-cell" id="cellWithdraw" role="button" tabindex="0">
+            <div class="grid-icon-wrap">
+              <img src="New folder/1-03.svg" alt="ដកប្រាក់" width="42" height="42">
+            </div>
+            <span class="grid-cell-label">ដកប្រាក់</span>
+          </div>
+
+          <!-- Row 2, Col 3: កាតទូរស័ព្ទ (Phone Top-up - 1-06.svg) -->
+          <div class="grid-cell" id="cellPhone" role="button" tabindex="0">
+            <div class="grid-icon-wrap">
+              <img src="New folder/1-06.svg" alt="កាតទូរស័ព្ទ" width="28" height="42">
+            </div>
+            <span class="grid-cell-label">កាតទូរស័ព្ទ</span>
+          </div>
+        </section>
+
+        <!-- PROMO BANNER CONTAINER (With right preview peek) -->
+        <section class="promo-banner-container" id="promoBanner">
+          <div class="promo-banner-track">
+            <div class="promo-banner-card promo-banner-main"></div>
+            <div class="promo-banner-card promo-banner-peek"></div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- BOTTOM NAVIGATION BAR (Fixed, Height 74px) -->
+      <nav class="bottom-nav-bar" id="bottomNav">
+        <!-- Item 1: ទំព័រដើម (Home - 1-01.svg) -->
+        <button class="nav-item nav-item-active" id="navHome" data-tab="home" aria-label="ទំព័រដើម">
+          <div class="nav-icon-wrap">
+            <img src="New folder/1-01.svg" alt="ទំព័រដើម" width="24" height="24">
+          </div>
+          <span class="nav-label">ទំព័រដើម</span>
+        </button>
+
+        <!-- Item 2: ទម្រង់គំរូ (Templates) -->
+        <button class="nav-item" id="navTemplates" data-tab="templates" aria-label="ទម្រង់គំរូ">
+          <div class="nav-icon-wrap">
+            <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#8E8E8E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4H18C19.1 4 20 4.9 20 6V20C20 21.1 19.1 22 18 22H6C4.9 22 4 21.1 4 20V6C4 4.9 4.9 4 6 4H8"></path>
+              <rect x="8" y="2" width="8" height="4" rx="1.5" stroke="#8E8E8E" stroke-width="2"></rect>
+              <path d="M9 13L11 15L15 10"></path>
+            </svg>
+          </div>
+          <span class="nav-label">ទម្រង់គំរូ</span>
+        </button>
+
+        <!-- Item 3: Center QR Scan Button (User SVG 1-04.svg) -->
+        <div class="center-qr-container">
+          <button class="center-qr-btn" id="centerQrBtn" aria-label="Scan KHQR">
+            <img src="New folder/1-04.svg" alt="Scan QR" width="38" height="38">
+          </button>
+        </div>
+
+        <!-- Item 4: ទីតាំង (Locations - 1-13.svg) -->
+        <button class="nav-item" id="navLocations" data-tab="locations" aria-label="ទីតាំង">
+          <div class="nav-icon-wrap">
+            <img src="New folder/1-13.svg" alt="ទីតាំង" width="22" height="26">
+          </div>
+          <span class="nav-label">ទីតាំង</span>
+        </button>
+
+        <!-- Item 5: ទំនាក់ទំនង (Contact - 1-11.svg) -->
+        <button class="nav-item" id="navContact" data-tab="contact" aria-label="ទំនាក់ទំនង">
+          <div class="nav-icon-wrap">
+            <img src="New folder/1-11.svg" alt="ទំនាក់ទំនង" width="24" height="24">
+          </div>
+          <span class="nav-label">ទំនាក់ទំនង</span>
+        </button>
+      </nav>
+    </div><!-- End #screenHome -->
+
+
+    <!-- ====================================================================
+         VIEW 1: KHQR CAMERA SCANNER SCREEN (Exact match of Image 1)
+         ==================================================================== -->
+    <div class="app-screen" id="screenScanner">
+      <div class="scanner-page-content">
+        <!-- Close Button (Round white button with black X) -->
+        <button class="scanner-close-circle" id="closeScannerScreenBtn" aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <!-- Titles -->
+        <div class="scanner-header-text">
+          <h2 class="scanner-page-title">ស្កេន QR</h2>
+          <p class="scanner-page-sub">ស្កេន QR ដើម្បីធ្វើប្រតិបត្តិការ</p>
+        </div>
+
+        <!-- Camera Viewport Box with Thick White Rounded Border -->
+        <div class="scanner-target-box" id="scannerTargetBox" title="ចុចត្រង់នេះដើម្បីស្កេនកូដ QR">
+          <div class="scanner-feed-simulation">
+            <div class="scanner-laser-line"></div>
+            <div class="scanner-tap-hint">ចុចដើម្បីស្កេន (Tap to Scan)</div>
+          </div>
+        </div>
+
+        <!-- Flash & Choose QR Pill Bar -->
+        <div class="scanner-controls-pill">
+          <button class="sc-ctrl-btn" id="scannerFlashBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M18 18L6 6" style="display:none;"/><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>ពិល</span>
+          </button>
+          <div class="sc-ctrl-divider"></div>
+          <button class="sc-ctrl-btn" id="scannerGalleryBtn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>ជ្រើសរើស QR</span>
+          </button>
+        </div>
+
+        <!-- Bottom Sheet (Accepted Payment Badges) -->
+        <div class="scanner-bottom-sheet">
+          <div class="sheet-title">សេវាទទួលយកសម្រាប់ការ ស្កេន</div>
+          <div class="payment-badges-row">
+            <!-- KHQR Red Badge -->
+            <div class="badge-item badge-khqr">
+              <span class="khqr-badge-txt">KHQR</span>
+            </div>
+            <!-- CDM Badge -->
+            <div class="badge-item badge-cdm">
+              <span>CDM</span>
+            </div>
+            <!-- ATM Badge -->
+            <div class="badge-item badge-atm">
+              <span>ATM</span>
+            </div>
+            <!-- Thai QR Payment Badge -->
+            <div class="badge-item badge-thaiqr">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-4 4h2v2h-2v-2zm4 0h2v2h-2v-2z"/></svg>
+              <span>THAI QR<br><small>PAYMENT</small></span>
+            </div>
+            <!-- VietQR Global Badge -->
+            <div class="badge-item badge-vietqr">
+              <span class="viet-red">VIET</span><span class="viet-blue">QR</span>
+              <small class="viet-sub">Global</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End #screenScanner -->
+
+
+    <!-- ====================================================================
+         VIEW 2: AMOUNT INPUT / SCAN STEP 2 (Exact 1:1 Match of Image 3)
+         ==================================================================== -->
+    <div class="app-screen" id="screenAmount">
+      <div class="amount-screen-content">
+        <!-- Top App Bar with Back and Info -->
+        <div class="screen-top-nav">
+          <button class="nav-circle-btn" id="amountBackBtn" aria-label="Back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <span class="top-nav-title">ស្កេន QR</span>
+          <button class="nav-circle-btn" id="amountInfoBtn" aria-label="Info">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </button>
+        </div>
+
+        <!-- Beneficiary Info (Red KHQR 100px Circle) -->
+        <div class="beneficiary-profile">
+          <div class="beneficiary-avatar-circle">
+            <!-- User 1-17.svg (Red KHQR Circle) -->
+            <img src="New folder/1-17.svg" alt="KHQR" width="100" height="100">
+          </div>
+          <div class="beneficiary-name" id="beneficiaryName">THOEUN THARY</div>
+          <div class="beneficiary-account" id="beneficiaryAcc">855 187 595 75 | ACLEDA</div>
+        </div>
+
+        <!-- Amount Display & Currency Pill Switcher -->
+        <div class="amount-input-display">
+          <span class="amount-typed-val" id="amountTypedVal">0</span>
+          <span class="amount-cursor"></span>
+          <button class="currency-pill-btn" id="currencyPillBtn" title="ប្តូររូបិយប័ណ្ណ">
+            <span class="currency-coin-icon">
+              <span class="coin-symbol" id="coinSymbolTxt">៛</span>
+            </span>
+            <span class="currency-name-txt" id="currencyNameTxt">រៀល</span>
+            <svg class="currency-chevron-svg" width="14" height="9" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L8 8L14 2" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Source Account Selector (Full Width Rounded Pill) -->
+        <div class="source-acc-selector" id="sourceAccSelector">
+          <span class="src-label">ពីលេខគណនី:</span>
+          <strong class="src-acc" id="sourceAccNum">035 639 220 003</strong>
+          <span class="src-divider">|</span>
+          <span class="src-curr" id="sourceAccCurr">ដុល្លារ</span>
+          <span class="src-chevron">⌵</span>
+        </div>
+
+        <!-- Custom Keypad (Full Width 3x4 Grid, Height 330px matching Image 3) -->
+        <div class="custom-keypad keypad-amount">
+          <button class="kp-btn" data-val="1">1</button>
+          <button class="kp-btn" data-val="2">2</button>
+          <button class="kp-btn" data-val="3">3</button>
+          <button class="kp-btn" data-val="4">4</button>
+          <button class="kp-btn" data-val="5">5</button>
+          <button class="kp-btn" data-val="6">6</button>
+          <button class="kp-btn" data-val="7">7</button>
+          <button class="kp-btn" data-val="8">8</button>
+          <button class="kp-btn" data-val="9">9</button>
+          <button class="kp-btn" data-val="00">00</button>
+          <button class="kp-btn" data-val="0">0</button>
+          <button class="kp-btn kp-backspace" id="amountBackspaceBtn" aria-label="Backspace">
+            <svg width="30" height="22" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 1.5H24.5C25.6 1.5 26.5 2.4 26.5 3.5V16.5C26.5 17.6 25.6 18.5 24.5 18.5H8.5C7.7 18.5 6.9 18.1 6.4 17.4L1.2 10.9C0.7 10.4 0.7 9.6 1.2 9.1L6.4 2.6C6.9 1.9 7.7 1.5 8.5 1.5Z" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M13 6.5L19.5 13.5M19.5 6.5L13 13.5" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Pay Action Button -->
+        <div class="amount-action-footer">
+          <button class="pay-submit-btn" id="paySubmitBtn" disabled>ទូទាត់</button>
+        </div>
+      </div>
+    </div><!-- End #screenAmount -->
+
+
+    <!-- ====================================================================
+         VIEW 3: ENTER PIN SCREEN (Exact match of Image 2)
+         ==================================================================== -->
+    <div class="app-screen" id="screenPin">
+      <div class="pin-screen-content">
+        <!-- Close Button -->
+        <button class="nav-circle-btn pin-close-btn" id="pinCloseBtn" aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <h2 class="pin-title">បញ្ចូលលេខសម្ងាត់</h2>
+
+        <!-- Golden Lock Icon in Soft Yellow Circle -->
+        <div class="pin-lock-circle">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="#F6B304">
+            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+          </svg>
+        </div>
+
+        <!-- 6 PIN Dots Indicator -->
+        <div class="pin-dots-container" id="pinDotsContainer">
+          <span class="pin-dot"></span>
+          <span class="pin-dot"></span>
+          <span class="pin-dot"></span>
+          <span class="pin-dot"></span>
+          <span class="pin-dot"></span>
+          <span class="pin-dot"></span>
+        </div>
+
+        <!-- Forgot PIN Link -->
+        <button class="forgot-pin-link" id="forgotPinBtn">ភ្លេចលេខសម្ងាត់?</button>
+
+        <!-- PIN Keypad (3x4 Grid matching Image 2) -->
+        <div class="custom-keypad keypad-pin">
+          <button class="kp-btn pin-kp-btn" data-pin="1">1</button>
+          <button class="kp-btn pin-kp-btn" data-pin="2">2</button>
+          <button class="kp-btn pin-kp-btn" data-pin="3">3</button>
+          <button class="kp-btn pin-kp-btn" data-pin="4">4</button>
+          <button class="kp-btn pin-kp-btn" data-pin="5">5</button>
+          <button class="kp-btn pin-kp-btn" data-pin="6">6</button>
+          <button class="kp-btn pin-kp-btn" data-pin="7">7</button>
+          <button class="kp-btn pin-kp-btn" data-pin="8">8</button>
+          <button class="kp-btn pin-kp-btn" data-pin="9">9</button>
+          <div class="kp-btn kp-empty"></div>
+          <button class="kp-btn pin-kp-btn" data-pin="0">0</button>
+          <div class="kp-btn kp-empty"></div>
+        </div>
+      </div>
+    </div><!-- End #screenPin -->
+
+
+    <!-- ====================================================================
+         VIEW 4: PAYMENT SUCCESS RECEIPT SCREEN (Exact 1:1 Match of Image 4)
+         ==================================================================== -->
+    <div class="app-screen" id="screenSuccess">
+      <div class="success-screen-content">
+        <div class="success-top-block">
+          <!-- Green Checkmark Circle Badge (106px Diameter matching Image 4) -->
+          <div class="success-check-badge">
+            <img src="New folder/1-16.svg" alt="ជោគជ័យ" width="106" height="106">
+          </div>
+
+          <!-- Success Title -->
+          <h2 class="success-title">ជោគជ័យ</h2>
+        </div>
+
+        <!-- White Receipt Ticket Card (Full Height & Spacious) -->
+        <div class="receipt-ticket-card">
+          <!-- Receipt Header -->
+          <div class="receipt-header-info">
+            <div class="receipt-amount-label">ចំនួនទឹកប្រាក់ប្រតិបត្តិការ</div>
+            <div class="receipt-amount-val" id="receiptAmountVal">
+              <span class="rcpt-num">0.01</span>
+              <span class="rcpt-curr">ដុល្លារ</span>
+            </div>
+            <div class="receipt-date-val" id="receiptDateVal">09 Nov 2026, 02:50 AM</div>
+          </div>
+
+          <!-- Dashed Separator -->
+          <div class="receipt-dashed-line"></div>
+
+          <!-- From Account Block (Sender) -->
+          <div class="receipt-party-row">
+            <div class="party-avatar party-avatar-kb">
+              <!-- KB Star Logo in Dark Olive (#534F43) matching Image 4 -->
+              <svg class="kb-avatar-svg" width="38" height="28" viewBox="0 0 203.1 141.7" fill="#534F43">
+                <path d="M76.7,110.6c0.4,8.2,0.9,16.4,1.5,24.6c0.2,3-1.2,5.3-4,6.2c-2.8,0.9-5.9-0.2-7.3-2.7c-1.5-2.7-2.6-5.6-3.5-8.5 c-3.5-10.6-5-21.6-5.9-32.6c-0.5-6.7-0.7-13.4-0.9-20.1c0-1.3,0-1.3-1.3-0.9c-4.6,1.8-8.8,4.5-13,7.1c-7.4,4.6-14.8,8.9-22.7,12.6 c-4.8,2.2-9.8,4-14.8,5.6c-1.9,0.6-3.7-0.1-4.4-1.7c-0.8-1.8-0.3-3.6,1.5-4.6c4.7-2.8,9.4-5.5,13.9-8.5c5.7-3.7,11.4-7.5,17.1-11.3 c4.6-3.1,9.4-5.9,14.6-8.1c0.3-0.1,0.8-0.2,0.8-0.5c0-0.4-0.5-0.5-0.8-0.7C32.7,57.8,17.8,49.2,3,40.6c-0.2-0.1-0.5-0.3-0.7-0.4 c-0.8-0.3-0.7-0.7-0.2-1.3c2.9-3.2,5.9-6.4,8.8-9.6c0.6-0.7,1.1-0.7,1.9-0.3C27,36.2,41.2,43.3,55.5,50.5c1.3,0.7,1.3,0.7,1.5-0.8 c1.7-14.3,4.9-28.2,8.7-42.1c0.8-3,2.2-5.6,5.2-6.9c2.4-1,4.8-0.7,7.2-0.1c4,1,4,1.1,3.7,5.1c-1,12.9-2,25.8-3,38.7 c-0.1,1.4-0.1,1.4,1.2,0.9c9.4-4.3,18.2-9.8,26.9-15.3c11.8-7.4,23.5-15,35.6-21.8c0.8-0.4,1.5-0.9,2.3-1.2c2.6-1.1,5.4-0.3,7,1.8 c1.7,2.2,1.8,5.1,0.1,7.3c-2.2,2.8-4.7,5.2-7.5,7.5c-3.5,2.9-7.5,4.9-11.4,7.2C114.7,41.3,96.2,52,77.8,63c-1.9,1.1-1.8,0.9-0.1,2.1 c19.5,13.4,39.5,26,59.7,38.1c6.1,3.6,12.6,4.4,19.4,3.3c8.4-1.3,15.9-4.6,22-10.6c3-2.9,5.3-6.2,6.3-10.3 c1.4-5.8-1.5-10.3-7.3-11.6c-5.1-1.1-9.6,0.4-13.7,3.2c-6.1,4.1-10.5,9.5-13.3,16.4c-1,2.6-2.2,5.1-4.7,6.6 c-3.2,1.9-6.4,1.4-9.4-0.4c-2.8-1.6-4.2-4.2-4-7.5c0.2-3.7,0.5-7.4,0.8-11.1c0.7-9.6,1.5-19.1,2.2-28.7c0.4-4.9,2.4-7.3,7.2-8.3 c0.9-0.2,1.8-0.3,2.7-0.5c3.6-0.6,6.3,1.7,6,5.3c-0.5,6.8-1,13.5-1.5,20.3c0,0.3-0.2,0.8,0.1,1c0.4,0.3,0.7-0.1,1-0.3 c6.6-3.4,13.5-5.9,21-6.5c8.6-0.8,16.6,0.8,23.8,5.7c6,4,8,9.8,6.5,16.7c-1.9,9.4-7.5,16.1-15.7,20.8c-8.5,4.9-17.8,7.4-27.3,9.2 c-1.2,0.2-2.3,0.4-3.5,0.5c-1,0.1-1.7,0.5-2.3,1.3c-0.8,1-1.7,2-2.6,2.9c-2.3,2.4-5.4,2.8-8.3,1.2c-8.7-5-17.5-10.1-26.2-15.1 c-13.2-7.6-26.3-15.2-39.5-22.8C77,84,76.9,84,76.7,83.8c-0.7-0.5-0.9-0.2-0.9,0.6c0,0.5,0,1.1,0,1.6C76,94.2,76.3,102.4,76.7,110.6z"/>
+              </svg>
+            </div>
+            <div class="party-details">
+              <div class="party-name">THOEUN THARY</div>
+              <div class="party-sub">035 639 220 003</div>
+            </div>
+          </div>
+
+          <!-- Downward Arrow Connector -->
+          <div class="receipt-connector-arrow">
+            <svg width="18" height="22" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 3L8 9L14 3" stroke="#F6B304" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 11L8 17L14 11" stroke="#F6B304" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- To Account Block (Beneficiary) -->
+          <div class="receipt-party-row">
+            <div class="party-avatar party-avatar-khqr">
+              <!-- User 1-17.svg (Red KHQR) -->
+              <img src="New folder/1-17.svg" alt="KHQR" width="58" height="58">
+            </div>
+            <div class="party-details">
+              <div class="party-name" id="receiptToName">THOEUN THARY</div>
+              <div class="party-sub" id="receiptToAcc">855 187 595 75</div>
+              <div class="party-bank" id="receiptToBank">ACLEDA</div>
+            </div>
+          </div>
+
+          <!-- Dashed Separator -->
+          <div class="receipt-dashed-line"></div>
+
+          <!-- Transaction Reference & Hash Metadata -->
+          <div class="receipt-meta-block">
+            <div class="receipt-meta-row">
+              <span class="meta-label">លេខយោងប្រតិបត្តិការ</span>
+              <span class="meta-val meta-ref-num" id="receiptRefNum">MB2600013944858<br>5</span>
+            </div>
+            <div class="receipt-meta-row">
+              <span class="meta-label">បាតកថាស</span>
+              <span class="meta-val meta-hash-val">
+                <span id="receiptHash">89f0e3e4</span>
+                <button class="copy-icon-btn" id="copyHashBtn" title="ចម្លង Hash">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </span>
+            </div>
+          </div>
+
+          <!-- Show More Button -->
+          <div class="receipt-more-container">
+            <button class="receipt-show-more-btn" id="receiptShowMoreBtn">បង្ហាញបន្ថែម</button>
+          </div>
+
+          <!-- Card Bottom Dashed Line -->
+          <div class="receipt-card-bottom-dash"></div>
+        </div>
+
+        <!-- Done Finish Button (White Pill Pinned at Bottom) -->
+        <div class="success-action-footer">
+          <button class="done-finish-btn" id="doneFinishBtn">រួចរាល់</button>
+        </div>
+      </div>
+    </div><!-- End #screenSuccess -->
+
+
+    <!-- ====================================================================
+         GLOBAL OVERLAYS (Side Drawer & Modals)
+         ==================================================================== -->
+    <!-- Side Navigation Drawer -->
+    <aside class="drawer-overlay" id="drawerOverlay" aria-hidden="true">
+      <div class="drawer-panel" id="drawerPanel">
+        <div class="drawer-header">
+          <div class="user-avatar-circle">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#534F43" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <div class="drawer-user-info">
+            <div class="drawer-user-name">HENG LYHOUR</div>
+            <div class="drawer-user-sub">គណនីឌីជីថល / Digital Account</div>
+          </div>
+          <button class="drawer-close-btn" id="drawerCloseBtn">&times;</button>
+        </div>
+
+        <nav class="drawer-menu-list">
+          <a href="#" class="drawer-item"><span class="item-icon">⚙️</span><span class="item-name">ការកំណត់ (Settings)</span></a>
+          <a href="#" class="drawer-item"><span class="item-icon">🔒</span><span class="item-name">សុវត្ថិភាព និងលេខកូដសម្ងាត់ (Security)</span></a>
+          <a href="#" class="drawer-item"><span class="item-icon">🌐</span><span class="item-name">ភាសា (Language: ខ្មែរ / English)</span></a>
+          <a href="#" class="drawer-item"><span class="item-icon">📄</span><span class="item-name">លក្ខខណ្ឌប្រើប្រាស់ (Terms & Conditions)</span></a>
+          <a href="#" class="drawer-item"><span class="item-icon">ℹ️</span><span class="item-name">អំពី KB PRASAC Bank v3.8.4</span></a>
+        </nav>
+
+        <div class="drawer-footer">
+          <button class="drawer-logout-btn" id="logoutBtn">ចាកចេញ (Log Out)</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Generic Bottom Sheet Dialog -->
+    <div class="app-modal-overlay" id="genericModal" aria-hidden="true">
+      <div class="generic-modal-card">
+        <div class="modal-drag-handle"></div>
+        <div class="modal-card-header">
+          <h3 class="modal-card-title" id="modalTitle">ចំណងជើង</h3>
+          <button class="modal-card-close" id="genericModalClose">&times;</button>
+        </div>
+        <div class="modal-card-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <!-- QR Selection Bottom Sheet Modal (Image upload & Bank KHQR Auto-populate) -->
+    <div class="qr-picker-modal" id="qrPickerModal" aria-hidden="true">
+      <div class="qr-picker-sheet">
+        <div class="qr-picker-header">
+          <h3 class="qr-picker-title">ជ្រើសរើស QR សម្រាប់ទូទាត់</h3>
+          <button class="qr-picker-close" id="qrPickerCloseBtn" aria-label="Close">&times;</button>
+        </div>
+
+        <!-- File Upload Action (Auto-read QR via jsQR) -->
+        <input type="file" id="qrFileInput" accept="image/*" style="display:none;">
+        <button class="qr-upload-btn" id="qrUploadTriggerBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B57F00" stroke-width="2.2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+          <span>ផ្ទុកឡើងរូបភាព QR ពីទូរស័ព្ទ / ឧបករណ៍</span>
+        </button>
+
+        <!-- Quick Bank KHQR Preset List -->
+        <div class="qr-preset-list">
+          <div class="qr-preset-item" data-name="THOEUN THARY" data-acc="855 187 595 75" data-bank="ACLEDA">
+            <div class="qr-preset-badge" style="background:#E61B24;">KHQR</div>
+            <div class="qr-preset-info">
+              <div class="qr-preset-name">THOEUN THARY</div>
+              <div class="qr-preset-sub">855 187 595 75 | ACLEDA</div>
+            </div>
+          </div>
+
+          <div class="qr-preset-item" data-name="HENG LYHOUR" data-acc="035 525 220 002" data-bank="KB PRASAC">
+            <div class="qr-preset-badge" style="background:#F6B304; color:#534F43;">KB</div>
+            <div class="qr-preset-info">
+              <div class="qr-preset-name">HENG LYHOUR</div>
+              <div class="qr-preset-sub">035 525 220 002 | KB PRASAC</div>
+            </div>
+          </div>
+
+          <div class="qr-preset-item" data-name="SOK CHANTHA" data-acc="001 234 567" data-bank="ABA Bank">
+            <div class="qr-preset-badge" style="background:#004B87;">ABA</div>
+            <div class="qr-preset-info">
+              <div class="qr-preset-name">SOK CHANTHA</div>
+              <div class="qr-preset-sub">001 234 567 | ABA Bank</div>
+            </div>
+          </div>
+
+          <div class="qr-preset-item" data-name="KEO VICHET" data-acc="012 999 888" data-bank="Wing Bank">
+            <div class="qr-preset-badge" style="background:#85C441;">WING</div>
+            <div class="qr-preset-info">
+              <div class="qr-preset-name">KEO VICHET</div>
+              <div class="qr-preset-sub">012 999 888 | Wing Bank</div>
+            </div>
+          </div>
+
+          <div class="qr-preset-item" data-name="CHHORN SOKHA" data-acc="002 987 654" data-bank="Canadia Bank">
+            <div class="qr-preset-badge" style="background:#D81E05;">CNB</div>
+            <div class="qr-preset-info">
+              <div class="qr-preset-name">CHHORN SOKHA</div>
+              <div class="qr-preset-sub">002 987 654 | Canadia Bank</div>
+            </div>
+          </div>
+
+          <div class="qr-preset-item" data-name="MENG SOVANNA" data-acc="089 444 333" data-bank="Sathapana Bank">
+            <div class="qr-preset-badge" style="background:#003A70;">SPN</div>
+            <div class="qr-preset-info">
+              <div class="qr-preset-name">MENG SOVANNA</div>
+              <div class="qr-preset-sub">089 444 333 | Sathapana Bank</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Beneficiary Input Form -->
+        <div class="qr-custom-card">
+          <div class="qr-custom-title">ឬ បញ្ចូលទិន្នន័យដោយផ្ទាល់ (Custom Input)</div>
+          <div class="qr-custom-grid">
+            <input type="text" id="customBenName" class="qr-custom-input" placeholder="ឈ្មោះអតិថិជន (Name)">
+            <input type="text" id="customBenBank" class="qr-custom-input" placeholder="ធនាគារ (Bank ឧ. ABA)">
+          </div>
+          <div class="qr-custom-grid">
+            <input type="text" id="customBenAcc" class="qr-custom-input" placeholder="លេខគណនី / ទូរស័ព្ទ (Account)">
+            <select id="customBenCurr" class="qr-custom-input">
+              <option value="រៀល">ប្រាក់រៀល (៛)</option>
+              <option value="ដុល្លារ">ប្រាក់ដុល្លារ ($)</option>
+            </select>
+          </div>
+          <button class="qr-custom-btn" id="customBenApplyBtn">យល់ព្រម (Apply & Scan)</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- End #appRoot -->
+
+  <!-- QR Decoding Engine & Main Interactive App -->
+  <script src="jsQR.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

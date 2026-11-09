@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# KB PRASAC Bank Mobile Web App
 
-# Run and deploy your AI Studio app
+វេបសាយទម្រង់ជា App ទូរស័ព្ទរបស់ធនាគារ **KB PRASAC Bank** ដែលត្រូវបានបង្កើតឡើងដូចរូបភាពគំរូ 100% មិនអោយខុស (Pixel-Perfect 1:1) និងអាចដំណើរការបានផ្ទាល់លើគ្រប់កម្មវិធីរុករក (Web Browser) ទាំងលើទូរស័ព្ទដៃ និងកុំព្យូទ័រ។
 
-This contains everything you need to run your app locally.
+## របៀបបើកដំណើរការ (How to Run)
+1. **បើកដោយផ្ទាល់**: ចុចបើកឯកសារ `index.html` ជាមួយ Browser ណាមួយ (Chrome, Edge, Safari, Firefox)។
+2. **ឬប្រើ Local Server**: 
+   - អាចបង្ហោះលើ Hosting / Vercel / Netlify / GitHub Pages ឬ Local Web Server ណាមួយ។
 
-View your app in AI Studio: https://ai.studio/apps/drive/1DsAve5GWjo4FL_YtYVdE_jGtUdY-Lgrq
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## អេក្រង់ទាំង ៥ ដូចរូបភាពគំរូ 100% (5 Screens Matching Screenshots):
+1. **ទំព័រដើម (Home Dashboard)**:
+   - Header ពណ៌អូលីវចាស់ `#534F43` កម្ពស់ 130px, ឡូហ្គោផ្កាយ KB PRASAC (`1-08.svg`), កណ្ដឹងដំណឹង (`1-10.svg`), ប៊ូតុង KHQR ក្រហម (`1-09.svg`)
+   - កាតគណនីពណ៌មាស `HENG LYHOUR`, `0.19 ដុល្លារ`, ប៊ូតុងផ្ទេរប្រាក់ និងទូទាត់
+   - ប្រអប់ 6 សេវាកម្ម: គណនី, ប័ណ្ណ (កាតមាសឆ្នូតស), បញ្ញើ, គម្ចី និងដកប្រាក់/កាតទូរស័ព្ទ (គ្មាន icon ខាងលើ ដូចរូបភាពគំរូ 100%)
+   - ប៊ូតុងស្កេន QR កណ្តាល: រង្វង់មាសមានស៊ុមតង្កៀបជ្រុងពណ៌ស និងបន្ទាត់ស្កេនកាត់ចំកណ្តាល `[—]` ដូចរូបភាពដើម
+   - ប្រើពុម្ពអក្សរផ្លូវការ **Krasar** (`Krasar Regular.ttf`, `KRASAR-BOLD.TTF`) របស់ធនាគារ KB PRASAC ដោយផ្ទាល់
+2. **ស្កេន QR (KHQR Camera Scanner)**:
+   - ស៊ុមស្កេនជ្រុងមូលពណ៌ស កម្រាស់ 3.5px, បន្ទាត់លេហ្ស័រស្កេន, ប៊ូតុងពិល និងជ្រើសរើស QR
+   - បន្ទះខាងក្រោមពណ៌ស បង្ហាញ Logo សេវាទទួលយក: KHQR, CDM, ATM, THAI QR PAYMENT, VIETQR Global
+3. **បញ្ចូលចំនួនទឹកប្រាក់ (Amount Entry)**:
+   - Profile អ្នកទទួល: Red KHQR logo, `THOEUN THARY`, `855 187 595 75 | ACLEDA`
+   - ចំនួនទឹកប្រាក់ `0` មាន Cursor ពណ៌មាសភ្លឹបភ្លែត និងប៊ូតុងប្តូររូបិយប័ណ្ណ `៛ រៀល ⌵` (ឬ `$ ដុល្លារ ⌵`)
+   - ជម្រើសគណនីប្រភព `035 639 220 003 | ដុល្លារ ⌵`
+   - ក្ដារចុចលេខ Keypad 1-9, 00, 0, ⌫ និងប៊ូតុងទូទាត់
+4. **បញ្ចូលលេខសម្ងាត់ (Enter PIN)**:
+   - ចំណងជើង "បញ្ចូលលេខសម្ងាត់", សោរពណ៌មាសក្នុងរង្វង់, ចុច 6 គ្រាប់ក្នុងប្រអប់មូល, តំណភ្ជាប់ "ភ្លេចលេខសម្ងាត់?", ក្ដារចុចលេខ
+5. **វិក្កយបត្រជោគជ័យ (Payment Success Receipt)**:
+   - ផ្ទៃពណ៌មាស `#F7B500`, សញ្ញាធិកពណ៌បៃតង (`1-16.svg`), អក្សរ "ជោគជ័យ" ពណ៌សភ្លឺ
+   - សន្លឹកវិក្កយបត្រស: `0.01 ដុល្លារ`, កាលបរិច្ឆេទ `09 Nov 2026, 02:50 AM`
+   - ពី: `THOEUN THARY` (KB Star / `035 639 220 003`) ទៅ: `THOEUN THARY` (KHQR / `855 187 595 75` / ACLEDA)
+   - លេខយោងប្រតិបត្តិការ `MB26000139448585`, បាកងហាស `89f0e3e4` និងប៊ូតុង Copy
+   - ប៊ូតុង "រួចរាល់" ពណ៌សនៅខាងក្រោមគេ
